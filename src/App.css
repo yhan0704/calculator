@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+html{
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, red, rgb(22, 236, 154));
+}
+
 main{
-    margin:10% 20%;
-    height: 70vh;
+    margin:2% auto;
+    width:476px;
+    height:447px;
 }
 
 main .cal-container{
@@ -35,10 +41,23 @@ main .button-container{
     display: flex;
     flex-flow: wrap;
     justify-content: center;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
 }
 
 main .buttons{
-    border:1px solid black;
+    border:1px solid gainsboro;
     width:80px;
     height:80px;
+}
+
+main .buttons:hover{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+main .buttons.button-17{
+    width: 91%;
+
 }
